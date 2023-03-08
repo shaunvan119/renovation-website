@@ -1,9 +1,12 @@
 import React from 'react'
-import "./HomePage.css"
+import Header from '../components/Header'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div className='home__page'>
+    <Header/>
+    
+    </div>
   )
 }
 
