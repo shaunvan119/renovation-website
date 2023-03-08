@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
+import logo from "../assets/logo.png";
+
+
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,12 +15,12 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">Logo</div>
+      <img className="logo" src={logo} alt="logo"/>
       <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#news">News</a></li>
+          <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/about"><li className="nav__options">About</li></Link>
+          <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/projects"><li className="nav__options">Projects</li></Link>
+          <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/news"><li className="nav__options">News</li></Link>
         </ul>
       </nav>
       <button className={`menu-button ${isMenuOpen ? "open" : ""}`} onClick={handleMenuClick}>
