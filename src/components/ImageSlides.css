@@ -2,6 +2,22 @@
   display: flex;
   height: 500px;
   width: 100%;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slides-container.loaded {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .image-slides {
@@ -23,16 +39,17 @@
   object-position: center center;
 }
 
-.heading {
+.heading-container {
+  width: 50%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.heading {
   font-size: 68px;
   font-weight: bold;
   font-weight: 900;
-  margin-left: 30px;
-  margin-bottom: 0px;
+  margin-left: 10%;
+  margin-top: 20%;
 }
 
 .color__change {
@@ -42,17 +59,14 @@
 @media (max-width: 768px) {
   .slides-container {
     height: 100vh;
-
     display: flex;
     flex-direction: column;
   }
 
   .image-slides {
     width: 100%;
-
   }
 }
-
 
 
 
