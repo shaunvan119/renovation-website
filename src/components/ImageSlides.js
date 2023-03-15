@@ -31,7 +31,7 @@ const ImageSlides = () => {
         </div>
       </div>
       <div className="heading-container">
-        <h1 className="heading">Melbourne home <br />renovation <span className="color__change">experts.</span></h1>
+        <h1 className="heading">Melbourne home <br />renovation <span className="color__change"><br/>experts.</span></h1>
       </div>
     </div>
   );

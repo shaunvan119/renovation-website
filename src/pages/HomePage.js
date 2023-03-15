@@ -8,6 +8,7 @@ import { GiFloorPolisher } from 'react-icons/gi';
 import { MdMapsHomeWork } from 'react-icons/md';
 import { FaFileContract } from 'react-icons/fa';
 import { BsHouseCheckFill } from 'react-icons/bs';
+import ImageGrid from '../components/ImageGrid';
 
 
 
@@ -74,8 +75,9 @@ const HomePage = () => {
           </p>
         </div>
       </div>
+      
     </div>
-    
+    <ImageGrid/>
     </div>
   )
 }

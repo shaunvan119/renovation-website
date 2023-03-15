@@ -1,0 +1,95 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+  position: relative;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.brand__h2 {
+  color: rgb(51, 49, 49);;
+    font-size: 46px;
+    font-weight: 700;
+    padding-left: 40px;
+    padding-top: 40px;
+
+}
+
+
+.underline__traffic {
+   color: #73a580;
+
+}
+
+.heading__concepts {
+  font-weight: 700;
+  font-size: 16px;
+  padding-left: 40px;
+  padding-bottom: 100px;
+  
+
+}
+
+@media screen and (max-width: 1000px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hover-container img {
+  transition: transform 0.3s ease;
+}
+
+.hover-container:hover img {
+  transform: scale(1.1);
+}
+
+.grid-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  z-index: 1;
+  width: 100%;
+  font-weight: 700;
+}
+
+.grid-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+  width: 100%;
+  text-shadow: 1px 1px 2px
+}
