@@ -1,0 +1,37 @@
+.services-container {
+  background-color: #3E363F;
+  color: whitesmoke;
+  padding: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.service {
+  color: whitesmoke;
+  padding: 2rem;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: whitesmoke;
+}
+
+.service-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+
+ 
