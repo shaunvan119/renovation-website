@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import logo from "../assets/logo.png";
+import { FaFacebookF } from 'react-icons/fa';
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { ImPinterest2 } from 'react-icons/im';
+
+
+
 
 
 
@@ -16,6 +22,11 @@ const Header = () => {
   return (
     <header className="header">
       <img className="logo" src={logo} alt="logo"/>
+      <div className="icons-container">
+      <FaFacebookF />
+      <AiOutlineInstagram />
+      <ImPinterest2 />
+      </div>
       <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/about"><li className="nav__options">About</li></Link>
