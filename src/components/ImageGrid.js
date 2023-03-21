@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 import './ImageGrid.css';
 import { AiOutlineMinus } from 'react-icons/ai';
+import JumpingButton from './JumpingButton';
 
 const ImageGrid = () => {
   const images = require.context('../assets', true);
@@ -93,24 +94,34 @@ const ImageGrid = () => {
   }, [handleScroll]);
 
   return (
-    <div>
-      <h2 className="brand__h2">
-        Designing and renovating homes<br />  to the highest{' '}
-        <span className="underline__traffic">standard.</span><br/><AiOutlineMinus />
-      </h2>
-      <h3 className="heading__concepts">Some of our projects</h3>
-      <div className="image-grid" ref={imageGridRef}>
-        {imageList.map((image, index) => (
-        
-          <div className="image-container hover-container" key={index}>
-            <img src={image.src} alt={image.alt} />
-            <div className="overlay">
-              <h2 className="grid-overlay">{image.title}</h2>
+    <div className="image-grid-container">
+      <div className="circle-container">
+        <div className="circle-text">Quality <br/> Guaranteed</div>
+      </div>
+      <div>
+      <div className="slide">
+        <h2 className="brand__h2">
+          Designing and renovating homes<br />  to the highest{' '}
+          <span className="underline__traffic">standard.</span><br/><AiOutlineMinus />
+        </h2>
+        <div className="grid__button">
+        <JumpingButton/>
+        </div>
+        <h3 className="heading__concepts">Renovations built to last</h3>
+        </div>
+        <div className="image-grid" ref={imageGridRef}>
+          {imageList.map((image, index) => (
+            <div className="image-container hover-container" key={index}>
+              <img src={image.src} alt={image.alt} />
+              <div className="overlay">
+                <h2 className="grid-overlay">{image.title}</h2>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
+ 
   );
 };
 

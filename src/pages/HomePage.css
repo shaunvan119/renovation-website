@@ -18,19 +18,20 @@
 }
 
 .service {
-  color: whitesmoke;
-  padding: 2rem;
+color: whitesmoke;
+padding: 2rem;
+transition: transform 1s ease-in-out;
 }
 
 .service-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: whitesmoke;
+font-size: 1.5rem;
+margin-bottom: 1rem;
+color: whitesmoke;
 }
 
-.service-description {
-  font-size: 1.1rem;
-  line-height: 1.5;
+.service:hover {
+transform: rotateY(360deg);
+transition: transform 1s ease-in-out;
 }
 
 @media only screen and (max-width: 784px) {

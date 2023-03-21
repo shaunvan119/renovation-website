@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Header from '../components/Header'
 import ImageSlides from '../components/ImageSlides'
+import Reviews from '../components/Reviews';
 import './HomePage.css';
 import { MdOutlineBathtub } from 'react-icons/md';
 import { MdKitchen } from 'react-icons/md';
@@ -77,7 +78,13 @@ const HomePage = () => {
       </div>
       
     </div>
+    <div className="home__gridcontainer">
     <ImageGrid/>
+    </div>
+    <div className="reviews__container">
+    <Reviews/>
+
+    </div>
     </div>
   )
 }

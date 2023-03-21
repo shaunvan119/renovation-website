@@ -1,0 +1,112 @@
+.profile-image-container {
+ 
+ height: 110px;
+ border-radius: 50%;
+ overflow: hidden;
+ margin-right: 20px;
+ }
+
+ .review {
+    width: 100%;
+ }
+
+
+.profile-image {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.reviews-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   
+}
+
+.reviewer {
+   display: flex;
+   align-items: center;
+   
+}
+
+.review__background {
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 15px;
+    width: 800px;
+    height: 200px;
+   
+}
+
+.stars {
+    margin-bottom: -18px;
+}
+
+
+
+
+.name {
+   font-weight: 700;
+   margin-top: 20px;
+   font-size: 24px;
+}
+
+
+.city {
+   font-size: 12px;
+}
+
+
+.Verified {
+   font-size: 12px;
+}
+
+.comment {
+    font-size: 24px;
+}
+
+
+@media only screen and (max-width: 891px) {
+    .review__background {
+   
+    width: 600px;
+    height: 180px;
+   
+}
+
+.comment {
+    font-size: 20px;
+}
+.name {
+   
+   font-size: 20px;
+}
+
+
+
+   
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+.comment {
+    font-size: 18px;
+}
+.name {
+   
+   font-size: 18px;
+}
+
+.review__background {
+    width: 330px;
+   
+}
+
+   
+}
