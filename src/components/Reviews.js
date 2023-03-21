@@ -120,7 +120,7 @@ const Reviews = () => {
 
  return (
    <div className="reviews-container">
-   <div className="review__background">
+   <div  className="review__background">
      {reviews.length > 0 && (
        <div className="review">
          <div className="reviewer">

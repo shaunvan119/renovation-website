@@ -1,5 +1,4 @@
 .profile-image-container {
- 
  height: 110px;
  border-radius: 50%;
  overflow: hidden;
@@ -34,11 +33,15 @@
 }
 
 .review__background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
     background-color: whitesmoke;
     padding: 30px;
     border-radius: 15px;
     width: 800px;
-    height: 200px;
+    height: 180px;
    
 }
 
@@ -50,7 +53,7 @@
 
 
 .name {
-   font-weight: 700;
+   font-weight: 200;
    margin-top: 20px;
    font-size: 24px;
 }
@@ -67,6 +70,7 @@
 
 .comment {
     font-size: 24px;
+    font-weight: 200;
 }
 
 
