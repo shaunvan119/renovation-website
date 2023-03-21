@@ -4,8 +4,57 @@
   grid-gap: 0;
   position: relative;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.hover-container:hover img {
+  transform: scale(1.05); /* added transform property */
+  transition: transform 0.8s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay:hover  {
+  transform: scale(1.10); /* added transform property */
+  transition: transform 0.8s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.grid-overlay {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
 
 .brand__h2 {
   color: rgb(51, 49, 49);;
@@ -18,7 +67,7 @@
 
 
 .underline__traffic {
-   color: #73a580;
+   color: #6b6e70;
 
 }
 
@@ -92,4 +141,14 @@
   padding: 2rem;
   width: 100%;
   text-shadow: 1px 1px 2px
+}
+
+@media screen and (max-width: 500px) {
+  
+  .grid-overlay {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
 }
