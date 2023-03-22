@@ -10,6 +10,8 @@ import { MdMapsHomeWork } from 'react-icons/md';
 import { FaFileContract } from 'react-icons/fa';
 import { BsHouseCheckFill } from 'react-icons/bs';
 import ImageGrid from '../components/ImageGrid';
+import backGroundHouse from "../assets/backGroundHouse.png"
+import JumpingButton from '../components/JumpingButton';
 
 
 
@@ -83,8 +85,24 @@ const HomePage = () => {
     </div>
     <div className="reviews__container">
     <Reviews/>
-
     </div>
+     {/* Scrolling div*/}
+    <div className="container__scrolling">
+    
+      <img className="house__background" src={backGroundHouse} alt="house" />
+      <div className="scroll-overlay"></div>
+      <div className="scrolling-div">
+        <h2 className="upgrade__title">UPGRADE YOUR HOME <br />FREE CONSULT</h2>
+        <JumpingButton />
+      </div>
+      <div className="circle-wrapper">
+        <div className="circle-one">Quality <br/> Guaranteed</div>
+        </div>
+      <div className="black__container">
+       
+      </div>
+    </div>
+
     </div>
   )
 }

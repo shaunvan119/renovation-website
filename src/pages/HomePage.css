@@ -34,6 +34,91 @@ transform: rotateY(360deg);
 transition: transform 1s ease-in-out;
 }
 
+.container__scrolling {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  
+  position: relative; 
+}
+
+.scroll-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.house__background { 
+  display: block;
+  width: 100%;
+  
+}
+
+
+
+.black__container {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: #201e20;
+  clip-path: polygon(0% 80%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 1;
+  width: 100%;
+  height: 380px;
+}
+
+
+.circle-wrapper {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  height: 200px;
+  background-color: rgb(192, 165, 8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  width: 200px;
+  
+}
+
+.circle-one {
+  color: white;
+  font-size: 24px;
+}
+
+
+
+.scrolling-div {
+  
+  padding-left: 40px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.scrolling-div {
+  z-index: 1;
+  /* add other styles as needed */
+}
+
+.upgrade__title {
+  font-size: 40px;
+  color: whitesmoke;
+  margin-bottom: 50px;
+  
+
+}
+
+
 @media only screen and (max-width: 784px) {
 
 .services-grid {

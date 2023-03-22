@@ -45,6 +45,20 @@
    
 }
 
+.review__background--in-view {
+  animation: slide-in 3s ease-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
 .stars {
     margin-bottom: -18px;
 }

@@ -24,6 +24,19 @@
   opacity: 1;
 }
 
+.circle-container--in-view {
+  animation: slide-in 1s ease-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
 .circle-text {
   text-align: center;
   font-weight: 700;

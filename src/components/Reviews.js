@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Reviews.css';
 import profileImage from '../assets/review1.png';
 import profileImageTwo from '../assets/review2.png';
@@ -13,10 +13,6 @@ import profileImageTen from '../assets/review10.png';
 
 import { RiStarSFill } from 'react-icons/ri';
 import { MdOutlineVerified } from 'react-icons/md';
-
-
-
-
 
 
 const reviewsData = [
@@ -94,10 +90,13 @@ city: "Perth WA",
 ];
 
 
+
+
 const Reviews = () => {
  const [reviews, setReviews] = useState([]);
  const [currentReview, setCurrentReview] = useState(0);
-
+const reviewBackgroundRef = useRef(null);
+const [isInView, setIsInView] = useState(false);
 
  useEffect(() => {
    if (reviewsData && reviewsData.length > 0) {
@@ -118,9 +117,36 @@ const Reviews = () => {
  }, [currentReview, reviews.length]);
 
 
+ useEffect(() => {
+  const options = {
+    rootMargin: '0px',
+    threshold: 0.5,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setIsInView(true);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  observer.observe(reviewBackgroundRef.current);
+
+  return () => {
+    observer.disconnect();
+  };
+}, []);
+
+
+ 
+
+
  return (
    <div className="reviews-container">
-   <div  className="review__background">
+   
+   <div className={`review__background ${isInView ? 'review__background--in-view' : ''}`} ref={reviewBackgroundRef}>
      {reviews.length > 0 && (
        <div className="review">
          <div className="reviewer">

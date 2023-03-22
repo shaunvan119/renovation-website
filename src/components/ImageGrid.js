@@ -1,4 +1,5 @@
-import React, { useRef, useEffect, useCallback } from 'react';
+import React, { useRef, useEffect, useCallback, useState } from 'react';
+
 import './ImageGrid.css';
 import { AiOutlineMinus } from 'react-icons/ai';
 import JumpingButton from './JumpingButton';
@@ -74,6 +75,8 @@ const ImageGrid = () => {
   ];
 
  const imageGridRef = useRef(null);
+ const circleMove = useRef(null);
+const [isInView, setIsInView] = useState(false);
 
   const handleScroll = useCallback(() => {
     const imageGrid = imageGridRef.current;
@@ -93,11 +96,37 @@ const ImageGrid = () => {
     };
   }, [handleScroll]);
 
+  useEffect(() => {
+  const options = {
+    rootMargin: '0px',
+    threshold: 0.5,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setIsInView(true);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  observer.observe(circleMove.current);
+
+  return () => {
+    observer.disconnect();
+  };
+}, []);
+
+  
+
   return (
     <div className="image-grid-container">
-      <div className="circle-container">
+      
+      <div className={`circle-container ${isInView ? 'circle-container--in-view' : ''}`} ref={circleMove}>
         <div className="circle-text">Quality <br/> Guaranteed</div>
-      </div>
+        </div>
+      
       <div>
       <div className="slide">
         <h2 className="brand__h2">
