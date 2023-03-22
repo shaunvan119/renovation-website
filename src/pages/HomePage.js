@@ -19,8 +19,10 @@ import JumpingButton from '../components/JumpingButton';
 
 
 
+
 const HomePage = () => {
   const servicesGridRef = useRef(null);
+  
 
   useEffect(() => {
     const servicesGrid = servicesGridRef.current;
@@ -99,7 +101,8 @@ const HomePage = () => {
         <div className="circle-one">Quality <br/> Guaranteed</div>
         </div>
       <div className="black__container">
-       
+      <h3 className='count-heading'>Projects completed</h3>
+      
       </div>
     </div>
 

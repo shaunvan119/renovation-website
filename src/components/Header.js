@@ -12,6 +12,7 @@ import { ImPinterest2 } from 'react-icons/im';
 
 
 
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -23,6 +24,7 @@ const Header = () => {
     <header className="header">
       <img className="logo" src={logo} alt="logo"/>
       <div className="icons-container">
+      
       <FaFacebookF />
       <AiOutlineInstagram />
       <ImPinterest2 />

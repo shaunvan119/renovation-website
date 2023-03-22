@@ -75,10 +75,14 @@ transition: transform 1s ease-in-out;
   height: 380px;
 }
 
+.count-heading {
+    color: whitesmoke;
+}
+
 
 .circle-wrapper {
   position: absolute;
-  top: -100px;
+  top: -90px;
   right: 0;
   height: 200px;
   background-color: rgb(192, 165, 8);
@@ -87,13 +91,22 @@ transition: transform 1s ease-in-out;
   align-items: center;
   border-radius: 200px;
   width: 200px;
+  text-align: center;
   
+  
+}
+
+.circle-wrapper {
+  z-index: 2;
 }
 
 .circle-one {
   color: white;
   font-size: 24px;
 }
+
+
+
 
 
 
