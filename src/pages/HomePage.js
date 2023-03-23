@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Header from '../components/Header'
 import ImageSlides from '../components/ImageSlides'
 import Reviews from '../components/Reviews';
@@ -12,6 +12,8 @@ import { BsHouseCheckFill } from 'react-icons/bs';
 import ImageGrid from '../components/ImageGrid';
 import backGroundHouse from "../assets/backGroundHouse.png"
 import JumpingButton from '../components/JumpingButton';
+import Count from '../components/Count';
+import WhyNext from '../components/WhyNext';
 
 
 
@@ -22,6 +24,8 @@ import JumpingButton from '../components/JumpingButton';
 
 const HomePage = () => {
   const servicesGridRef = useRef(null);
+  const projectsMove = useRef(null);
+const [isInView, setIsInView] = useState(false);
   
 
   useEffect(() => {
@@ -35,7 +39,36 @@ const HomePage = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+    
+  }, 
+  
+  []);
+
+useEffect(() => {
+  const options = {
+    rootMargin: '0px',
+    threshold: 0.5,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setIsInView(true);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  observer.observe(projectsMove.current);
+
+  return () => {
+    observer.disconnect();
+  };
+}, []);
+
+  
+
+  
 
   return (
     <div className='home__page'>
@@ -90,10 +123,9 @@ const HomePage = () => {
     </div>
      {/* Scrolling div*/}
     <div className="container__scrolling">
-    
       <img className="house__background" src={backGroundHouse} alt="house" />
       <div className="scroll-overlay"></div>
-      <div className="scrolling-div">
+      <div className={`scrolling-div ${isInView ? 'scrolling-div--in-view' : ''}`} ref={projectsMove}>
         <h2 className="upgrade__title">UPGRADE YOUR HOME <br />FREE CONSULT</h2>
         <JumpingButton />
       </div>
@@ -101,9 +133,14 @@ const HomePage = () => {
         <div className="circle-one">Quality <br/> Guaranteed</div>
         </div>
       <div className="black__container">
-      <h3 className='count-heading'>Projects completed</h3>
-      
+      <div className={`circleTwo-wrapper ${isInView ? 'circleTwo-wrapper--in-view' : ''}`} ref={projectsMove}>
+        <div className="circle-two">PROJECTS<br/> COMPLETED<div><Count/></div> </div>
+        </div>
       </div>
+    </div>
+    <div className="home-next-container">
+    <WhyNext/>
+
     </div>
 
     </div>

@@ -70,21 +70,25 @@
    font-weight: 200;
    margin-top: 20px;
    font-size: 24px;
+   color: rgb(51, 49, 49);
 }
 
 
 .city {
    font-size: 12px;
+   color: rgb(51, 49, 49);
 }
 
 
 .Verified {
    font-size: 12px;
+   color: rgb(51, 49, 49);
 }
 
 .comment {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 200;
+    color: rgb(51, 49, 49);
 }
 
 

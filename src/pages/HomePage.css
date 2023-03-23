@@ -1,3 +1,34 @@
+.circleTwo-wrapper--in-view {
+  animation: slide-in 1s ease-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+
+.scrolling-div--in-view {
+  animation: slide-right 1s ease-out forwards;
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+
+
 .services-container {
   background-color: #201e20;
   color: whitesmoke;
@@ -91,18 +122,38 @@ transition: transform 1s ease-in-out;
   align-items: center;
   border-radius: 200px;
   width: 200px;
-  text-align: center;
-  
-  
+  text-align: center; 
 }
 
 .circle-wrapper {
   z-index: 2;
 }
 
+
+.circleTwo-wrapper {
+  position: absolute;
+  top: 170px;
+  right: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.circleTwo-wrapper {
+  z-index: 2;
+}
+
 .circle-one {
   color: white;
   font-size: 24px;
+  
+}
+
+.circle-two {
+  color: rgb(192, 165, 8);;
+  font-size: 36px;
 }
 
 

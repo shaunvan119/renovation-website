@@ -46,7 +46,7 @@ const Count = () => {
 
   return (
     <div ref={countRef}>
-      <h2 className="count__heading">Projects{count}</h2>
+      <h2 className="count__heading">+ {count}</h2>
     </div>
   );
 };
