@@ -49,6 +49,20 @@
   list-style-type: none;
 }
 
+@media (max-width: 1090px) {
+  .why-next-wrapper {
+  height: 550px;
+}
+
+
+
+.why-next-image img {
+  height: 550px; 
+}
+ 
+}
+
+
 @media (max-width: 768px) {
   .why-next-wrapper {
     flex-direction: column;
@@ -68,5 +82,13 @@
   
   height: auto; /* set the height to 300 pixels */
 }
+
+.why-next-wrapper {
+  height: 850px;
 }
+
+
+
+}
+
 

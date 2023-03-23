@@ -129,7 +129,7 @@ useEffect(() => {
         <h2 className="upgrade__title">UPGRADE YOUR HOME <br />FREE CONSULT</h2>
         <JumpingButton />
       </div>
-      <div className="circle-wrapper">
+      <div className="circle-wrapper circle-wrapper-two">
         <div className="circle-one">Quality <br/> Guaranteed</div>
         </div>
       <div className="black__container">
@@ -140,7 +140,6 @@ useEffect(() => {
     </div>
     <div className="home-next-container">
     <WhyNext/>
-
     </div>
 
     </div>

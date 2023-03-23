@@ -5,3 +5,15 @@
     margin-top: 0px;
     
 }
+
+
+@media (max-width: 675px) {
+    .count__heading {
+   
+    font-size: 42px;
+    
+    
+}
+ 
+  
+}

@@ -28,6 +28,7 @@ const WhyNext = () => {
      <div className="why-next-image">
      <img className="NextOne-image" src={NextOne} alt="Kicthen"/>
      </div>
+     
     </div>
   );
 };
