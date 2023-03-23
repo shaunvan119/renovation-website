@@ -14,6 +14,8 @@ import backGroundHouse from "../assets/backGroundHouse.png"
 import JumpingButton from '../components/JumpingButton';
 import Count from '../components/Count';
 import WhyNext from '../components/WhyNext';
+import WhyNextTwo from '../components/WhyNextTwo';
+
 
 
 
@@ -140,6 +142,7 @@ useEffect(() => {
     </div>
     <div className="home-next-container">
     <WhyNext/>
+    <WhyNextTwo/>
     </div>
 
     </div>
