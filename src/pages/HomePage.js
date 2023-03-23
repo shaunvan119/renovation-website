@@ -15,12 +15,7 @@ import JumpingButton from '../components/JumpingButton';
 import Count from '../components/Count';
 import WhyNext from '../components/WhyNext';
 import WhyNextTwo from '../components/WhyNextTwo';
-
-
-
-
-
-
+import TrippleIcons from '../components/TrippleIcons';
 
 
 
@@ -142,6 +137,7 @@ useEffect(() => {
     </div>
     <div className="home-next-container">
     <WhyNext/>
+    <TrippleIcons/>
     <WhyNextTwo/>
     </div>
 

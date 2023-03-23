@@ -1,5 +1,6 @@
 
 
+
 @media screen and (max-width: 768px) {
 
   .why-next-wrapper-two {
@@ -7,4 +8,20 @@
 
 }
 
+
+
 }
+
+@media screen and (max-width: 600px) {
+
+  .why-next-wrapper-two {
+    margin-top: 0px;
+
+}
+
+.wrapper-next-content {
+    margin-top: -250px;
+}
+
+}
+
