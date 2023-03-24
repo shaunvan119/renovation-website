@@ -16,6 +16,8 @@ import Count from '../components/Count';
 import WhyNext from '../components/WhyNext';
 import WhyNextTwo from '../components/WhyNextTwo';
 import TrippleIcons from '../components/TrippleIcons';
+import NextSteps from '../components/NextSteps';
+
 
 
 
@@ -139,6 +141,7 @@ useEffect(() => {
     <WhyNext/>
     <TrippleIcons/>
     <WhyNextTwo/>
+    <NextSteps/>
     </div>
 
     </div>

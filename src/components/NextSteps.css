@@ -1,0 +1,116 @@
+.next-steps-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 150px;
+
+  
+  
+}
+
+.next-steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-heading {
+    font-size: 36px;
+    color: #6b6e70;
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+}
+
+.next-button {
+    margin-top:50px;
+}
+
+.step-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(192, 165, 8);
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.step-text {
+  flex-grow: 1;
+  font-size: 24px;
+  font-weight: bold;
+  color: #6b6e70;
+}
+
+
+
+.image-steps-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  max-width: 680px;
+  position: relative; /* add position relative to the parent div */
+}
+
+.image-overlay-next {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+height: 280px;
+  clip-path: polygon(0% 90%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 1; /* make sure the overlay is above the image */
+}
+
+.step-image {
+  width: 750px;
+  width: 100%;
+  height: 480px;
+  z-index: 0; /* make sure the image is below the overlay */
+ 
+}
+
+.overlay-text {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(192, 165, 8);
+  text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .next-steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-steps-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .step {
+    margin: 20px 0;
+  }
+
+  .step-number {
+    margin-right: 10px;
+  }
+}
