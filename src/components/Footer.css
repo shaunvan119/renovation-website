@@ -115,8 +115,8 @@ margin-top: 95px;
 .react-icons {
   display: flex;
   flex-direction: row;
-
-  
+  justify-content: space-between;
+  max-width: 100px;
 
 }
 
