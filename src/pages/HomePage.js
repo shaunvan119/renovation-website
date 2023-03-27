@@ -17,6 +17,7 @@ import WhyNext from '../components/WhyNext';
 import WhyNextTwo from '../components/WhyNextTwo';
 import TrippleIcons from '../components/TrippleIcons';
 import NextSteps from '../components/NextSteps';
+import Footer from '../components/Footer';
 
 
 
@@ -143,7 +144,7 @@ useEffect(() => {
     <WhyNextTwo/>
     <NextSteps/>
     </div>
-
+    <Footer/>
     </div>
   )
 }

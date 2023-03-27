@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect } from 'react';
 import "./WhyNext.css"
 import NextOne from "../assets/next1.png"
 import { RiStarSFill } from 'react-icons/ri';
@@ -10,33 +10,32 @@ import { RiStarSFill } from 'react-icons/ri';
 
 const WhyNext = () => {
 
-const ChoseUs = useRef(null);
-const [isInView, setIsInView] = useState(false);
+  const handleIntersection = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+};
 
 useEffect(() => {
-  const options = {
-    rootMargin: '0px',
-    threshold: 0.5,
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        setIsInView(true);
-        observer.unobserve(entry.target);
-      }
+    const observer = new IntersectionObserver(handleIntersection, {
+      rootMargin: '0px',
+      threshold: 0.3,
     });
-  }, options);
+    const container = document.querySelector('.why-next-wrapper');
+    observer.observe(container);
 
-  observer.observe(ChoseUs.current);
+    return () => {
+      observer.unobserve(container);
+    };
+  }, []);
 
-  return () => {
-    observer.disconnect();
-  };
-}, []);
+
 
   return (
-    <div className={`why-next-wrapper ${isInView ? 'circleTwo-wrapper--in-view' : ''}`} ref={ChoseUs}>
+    <div className="why-next-wrapper">
     <div className="wrapper-next-content">
       <h2 className="next-heading">WHY CHOOSE US:</h2>
       <ul className="why-next-list">

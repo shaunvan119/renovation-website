@@ -1,3 +1,15 @@
+
+.why-next-wrapper {
+  /* ... */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.why-next-wrapper.fade-in {
+  opacity: 1;
+}
+
+
 .why-next-wrapper {
   display: flex;
   justify-content: center;
@@ -85,7 +97,7 @@
 }
 
 .why-next-wrapper {
-  height: 850px;
+  height:100%;
 }
 
 

@@ -62,3 +62,13 @@ font-size: 24px;
 }
 
 }
+
+@media (max-width: 462px) {
+ 
+
+  .tripple-icons-container {
+    margin-top: 200px;
+}
+
+}
+

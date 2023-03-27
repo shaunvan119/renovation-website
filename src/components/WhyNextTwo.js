@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect } from 'react';
 import "./WhyNext.css"
 import "./WhyNextTwo.css"
 import NextTwo from "../assets/next3.png"
@@ -7,33 +7,32 @@ import { RiStarSFill } from 'react-icons/ri';
 
 const WhyNextTwo = () => {
 
-  const ChoseUs = useRef(null);
-const [isInView, setIsInView] = useState(false);
+  const handleIntersection = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+};
 
 useEffect(() => {
-  const options = {
-    rootMargin: '0px',
-    threshold: 0.5,
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        setIsInView(true);
-        observer.unobserve(entry.target);
-      }
+    const observer = new IntersectionObserver(handleIntersection, {
+      rootMargin: '0px',
+      threshold: 0.3,
     });
-  }, options);
+    const container = document.querySelector('.why-next-wrapper-two');
+    observer.observe(container);
 
-  observer.observe(ChoseUs.current);
+    return () => {
+      observer.unobserve(container);
+    };
+  }, []);
 
-  return () => {
-    observer.disconnect();
-  };
-}, []);
+ 
   return (
  
-    <div className={`why-next-wrapper why-next-wrapper-two ${isInView ? 'circleTwo-wrapper--in-view' : ''}`} ref={ChoseUs}>
+    <div className="why-next-wrapper-two">
     <div className="why-next-image">
      <img className="NextOne-image" src={NextTwo} alt="Kicthen"/>
      </div>

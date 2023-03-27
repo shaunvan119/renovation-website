@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-
 import "./TrippleIcons.css"
 import { BsArrowUpCircle } from 'react-icons/bs';
 import { BsWrenchAdjustableCircle } from 'react-icons/bs';
