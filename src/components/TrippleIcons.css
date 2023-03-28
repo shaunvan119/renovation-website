@@ -18,6 +18,7 @@
   align-items: center;
   margin-top: 100px;
   color: rgb(51, 49, 49);
+
 }
 
 
@@ -27,6 +28,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .icons-boxes {
@@ -58,7 +60,11 @@ font-size: 24px;
   }
 
   .tripple-icons-container {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+}
+
+.icons-boxes {
+  margin-bottom: 40px;
 }
 
 }
@@ -67,7 +73,7 @@ font-size: 24px;
  
 
   .tripple-icons-container {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 }

@@ -123,11 +123,11 @@ height: 280px;
 @media (max-width: 768px) {
 
   .step-image {
- 
-
   height: 500px;
-  
- 
+}
+
+.step-heading {
+  font-size: 24px;
 }
   .next-steps-container {
     flex-direction: column;
@@ -161,3 +161,25 @@ height: 280px;
 }
 
 }
+
+@media (max-width: 440px) {
+
+  .step-image {
+  max-height: 400px;
+}
+
+.step-image {
+  border-radius: 0px;
+}
+
+.image-overlay-next {
+
+  border-radius: 0px;
+}
+
+
+}
+
+
+
+

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useCallback, useState } from 'react';
-
+import { TiTick } from 'react-icons/ti';
 import './ImageGrid.css';
 import { AiOutlineMinus } from 'react-icons/ai';
 import JumpingButton from './JumpingButton';
@@ -124,7 +124,7 @@ const [isInView, setIsInView] = useState(false);
     <div className="image-grid-container">
       
       <div className={`circle-container ${isInView ? 'circle-container--in-view' : ''}`} ref={circleMove}>
-        <div className="circle-text">Quality <br/> Guaranteed</div>
+        <div className="circle-text">Quality <br/> Guaranteed<br/><TiTick size={40}/></div>
         </div>
       
       <div>

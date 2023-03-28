@@ -46,19 +46,35 @@
   position: absolute;
   top: -100px;
   right: 0;
-  height: 200px;
+  height: 220px;
   background-color: rgb(192, 165, 8);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 200px;
-  width: 200px;
+  width: 220px;
+ 
   
 }
 
+
+
+
+
+
 .circle-text {
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  line-height: 30px; /* set to the same height as the circle */
+  color: whitesmoke;
+  position: relative;
+  font-weight: 700;
   font-size: 24px;
+  transform: rotate(20deg);
 }
 
 
@@ -218,6 +234,19 @@
   text-shadow: 1px 1px 2px
 }
 
+@media (max-width: 768px) {
+
+
+.circle-container {
+  height: 160px;
+  width: 160px;
+}
+
+
+
+  
+}
+
 @media screen and (max-width: 500px) {
   
   .grid-overlay {
@@ -227,3 +256,4 @@
   text-align: center;
 }
 }
+

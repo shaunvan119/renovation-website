@@ -18,6 +18,9 @@ import WhyNextTwo from '../components/WhyNextTwo';
 import TrippleIcons from '../components/TrippleIcons';
 import NextSteps from '../components/NextSteps';
 import Footer from '../components/Footer';
+import { TiTick } from 'react-icons/ti';
+
+
 
 
 
@@ -130,7 +133,7 @@ useEffect(() => {
         <JumpingButton />
       </div>
       <div className="circle-wrapper circle-wrapper-two">
-        <div className="circle-one">Quality <br/> Guaranteed</div>
+        <div className="circle-one">Quality <br/> Guaranteed<br/><TiTick size={40}/></div>
         </div>
       <div className="black__container">
       <div className={`circleTwo-wrapper ${isInView ? 'circleTwo-wrapper--in-view' : ''}`} ref={projectsMove}>
@@ -144,6 +147,7 @@ useEffect(() => {
     <WhyNextTwo/>
     <NextSteps/>
     </div>
+    <Reviews/>
     <Footer/>
     </div>
   )

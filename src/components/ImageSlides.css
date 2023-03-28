@@ -205,6 +205,19 @@
   
 }
 
+@media (max-width: 768px) {
+
+
+.circle {
+  height: 200px;
+  width: 200px;
+}
+
+
+
+  
+}
+
 @media (max-width: 440px) {
   .heading-overlay {
   width: 350px;
