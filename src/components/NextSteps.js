@@ -34,8 +34,6 @@ useEffect(() => {
 
   return (
     <div className="next-steps-container">
-      
-     
       <div className="image-steps-container">
       <div className="image-overlay-next">
         <h3 className="overlay-text">HAPPY<br/> CLIENTS<Count/></h3>

@@ -1,19 +1,42 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import "./Footer.css"
 import footerBackground from "../assets/footerBackground.png"
 import LogoFooter from "../assets/logoFooter.png"
-
 import { FaFacebookF } from 'react-icons/fa';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { ImPinterest2 } from 'react-icons/im';
 
 const Footer = () => {
+
+const handleIntersection = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      rootMargin: '0px',
+      threshold: 0.3,
+    });
+    const container = document.querySelector('.footer-fade');
+    observer.observe(container);
+
+    return () => {
+      observer.unobserve(container);
+    };
+  }, []);
+
+
+
   return (
     <div className="footer-wrapper">
      <div className="overlay-footer"></div>
- 
       <img className="footer-background" src={footerBackground} alt="kitchen background"/>
-      <h2 className="footer-header">MELBOURNES MOST <span className="color-footer">TRUSTED</span> BUILDERS</h2>
+      <h2 className="footer-header footer-fade">MELBOURNES MOST <span className="color-footer">TRUSTED</span> BUILDERS</h2>
 
      <div className="footer-items-wrapper">
 
