@@ -19,6 +19,7 @@ import TrippleIcons from '../components/TrippleIcons';
 import NextSteps from '../components/NextSteps';
 import Footer from '../components/Footer';
 import { TiTick } from 'react-icons/ti';
+import BlogSection from '../components/BlogSection';
 
 
 
@@ -146,8 +147,11 @@ useEffect(() => {
     <TrippleIcons/>
     <WhyNextTwo/>
     <NextSteps/>
-    </div>
     <Reviews/>
+    </div>
+    <div className="blog-home-section">
+    <BlogSection/>
+    </div>
     <Footer/>
     </div>
   )

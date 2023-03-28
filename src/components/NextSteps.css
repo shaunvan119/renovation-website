@@ -9,115 +9,61 @@
   opacity: 1;
 }
 
-
-
 .next-steps-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-evenly;
   margin-top: 150px;
-
-  
-  
 }
-
-.next-steps {
-  display: flex;
-  flex-direction: column;
-}
-
-.step-heading {
-    font-size: 36px;
-    color: #6b6e70;
-}
-
-.step {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 20px;
-}
-
-.next-button {
-    margin-top:50px;
-}
-
-.step-number {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(192, 165, 8);
-  color: white;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  font-weight: bold;
-  margin-right: 20px;
-}
-
-.step-text {
-  flex-grow: 1;
-  font-size: 24px;
-  font-weight: bold;
-  color: #6b6e70;
-}
-
 
 
 .image-steps-container {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  max-width: 680px;
   position: relative; /* add position relative to the parent div */
-  
 }
 
 .image-overlay-next {
   position: absolute;
-  bottom: 0;
-  left: 0;
   right: 0;
+  top: 0;
+  width: 340px;
+  background-color: #201e20;
+  height: 260px;
+  z-index: 1; 
+  
+}
 
-  background-color: rgba(0, 0, 0, 0.6);
-height: 280px;
-  clip-path: polygon(0% 90%, 100% 0%, 100% 100%, 0% 100%);
-  z-index: 1; /* make sure the overlay is above the image */
-  border-radius: 20px;
+.image-overlay-next-two {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 340px;
+  background-color: #201e20;
+  height: 260px;
+  z-index: 1; 
 }
 
 .step-image {
   width: 750px;
   width: 100%;
-  height: 100%;
-  z-index: 0; /* make sure the image is below the overlay */
-  border-radius: 20px;
+  height: 661px;
+  z-index: 0; 
+
  
 }
 
 .overlay-text {
   position: absolute;
-  top: 60%;
-  left: 80%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   color: rgb(192, 165, 8);
   
 }
 
 
-@media (max-width: 986px) {
-  .image-steps-container {
-  max-width: 480px;
-}
 
-
-
-}
 
 
 @media (max-width: 768px) {
@@ -139,33 +85,45 @@ height: 280px;
     margin-bottom: 20px;
   }
 
-  .step {
-    margin: 20px 0;
-  }
+  .next-steps-container {
+  margin-top: 0px;
+}
 
-  .step-number {
-    margin-right: 10px;
-  }
 
-  .next-steps {
-    margin-bottom: 90px;
-    margin-top: -60px;
-    
+ 
+
+}
+
+
+@media (max-width: 685px) {
+  .image-overlay-next {
+  width: 230px;
+  height: 150px;
+}
+
+.image-overlay-next-two {
+  position: absolute;
+  width: 230px;
+  height: 150px;; 
+}
+
+.overlay-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-size: 24px;
   
 }
 
 
-
-.step-text {
-  font-size: 20px;
-}
+ 
 
 }
 
 @media (max-width: 440px) {
 
   .step-image {
-  max-height: 400px;
+  max-height: 350px;
 }
 
 .step-image {

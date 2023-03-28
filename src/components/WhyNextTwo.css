@@ -43,6 +43,11 @@
     flex-direction: column;
     height: auto;
   }
+
+  .why-next-wrapper-two {
+  border-radius: 0px;
+ 
+}
 }
 
 
