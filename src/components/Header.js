@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <img className="logo" src={logo} alt="logo"/>
+      <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/"><img className="logo" src={logo} alt="logo"/></Link>
       <div className="icons-container">
       
       <FaFacebookF />
@@ -26,7 +26,7 @@ const Header = () => {
       <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/about"><li className="nav__options">About</li></Link>
-          <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/projects"><li className="nav__options">Projects</li></Link>
+          <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/project"><li className="nav__options">Projects</li></Link>
           <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/news"><li className="nav__options">News</li></Link>
         </ul>
       </nav>

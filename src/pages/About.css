@@ -1,0 +1,64 @@
+.background-team-photo {
+    height: 520px;
+    width: 100%;
+  max-width: 950px;
+    margin-top: 40px;
+    margin-bottom: -100px;
+}
+
+.about-image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;  
+}
+
+.heading-about {
+    font-size: 44px;
+    color: whitesmoke;
+    font-weight: 900;
+    padding-left: 40px;
+    
+}
+
+.h2-about-container {
+    background-color: #201e20;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+@media only screen and (max-width: 698px) {
+    .background-team-photo {
+    height: 420px;
+    width: 100%;
+   
+    margin-top: 80px;
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+    .background-team-photo {
+    height: 320px;
+    ;
+}
+
+}
+
+@media only screen and (max-width: 896px) {
+   .h2-about-container {
+    display: none;
+
+   }
+
+    .background-team-photo {
+   
+   margin-bottom: -203.6px;
+    
+}
+
+}
+
+
+
