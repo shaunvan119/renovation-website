@@ -20,6 +20,7 @@ import NextSteps from '../components/NextSteps';
 import Footer from '../components/Footer';
 import { TiTick } from 'react-icons/ti';
 import BlogSection from '../components/BlogSection';
+import ContactForm from '../components/ContactForm';
 
 
 
@@ -124,6 +125,7 @@ useEffect(() => {
     </div>
     <div className="reviews__container">
     <Reviews/>
+    <ContactForm/>
     </div>
      {/* Scrolling div*/}
     <div className="container__scrolling">

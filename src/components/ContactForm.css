@@ -1,0 +1,87 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    background-color: #201e20;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.input-contact {
+  margin-bottom: 20px;
+}
+
+.input-button {
+    margin-bottom: 30px;
+    background-color: rgb(192, 165, 8);
+    border: none;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+.input-button:hover {
+  background-color:  whitesmoke;
+  color: black;
+}
+
+
+
+.last_input {
+    
+    height: 40px;
+    font-weight: 700;
+}
+
+input {
+  width: 305px;
+  height: 25px;
+  
+  
+}
+
+textarea {
+  width: 305px;
+}
+
+.last_input {
+    width: 310px;
+}
+
+label {
+    color: #6b6e70;
+    font-weight: 700;
+}
+
+.popform__heading {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+.popform__offer {
+  color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 40px;
+
+}
+
+.result-msg {
+    color: red;
+    margin-top: -15px;
+}
