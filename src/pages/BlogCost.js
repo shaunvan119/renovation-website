@@ -5,29 +5,50 @@ const BlogCost = () => {
   return (
     <div className="blog-main-wrapper">
     <div className="blog-container-pages">
-      <h2 className="blog-pages-heading">Renovating Your Home: Planning and Finding the Right Builder</h2>
+      <h2 className="blog-pages-heading">Renovating Your Home: Factors that affect the cost of a renovation</h2>
 
-      <h3 className="blog-pages-h3">Step 1: Define Your Renovation Goals</h3>
-      <p>The first step to planning your renovation is to define your goals. This includes identifying what changes you want to make to your home and why. Do you want to create more space, update your kitchen or bathroom, or add an extension to your home? Defining your goals will help you determine the scope of your renovation and the budget you need to achieve your desired outcome.</p>
+      <h3 className="blog-pages-h3">Step 1: The scope of the project </h3>
+      <p>The larger the project, the more expensive it will be. A complete home renovation will cost more than a minor update to your bathroom or kitchen.</p>
 
-      <h3 className="blog-pages-h3">Step 2: Set a Budget</h3>
-      <p className="blog-pages-p">Once you have defined your renovation goals, the next step is to set a budget. This will help you determine what changes you can afford to make and what type of builder you can hire. Be sure to include all the costs associated with your renovation, such as materials, labor, permits, and any unexpected expenses.</p>
+      <h3 className="blog-pages-h3">Step 2: Materials</h3>
+      <p className="blog-pages-p">The materials you choose will have a significant impact on the cost of your renovation. High-end materials will cost more than standard or lower-quality materials.</p>
 
-      <h3 className="blog-pages-h3">Step 3: Research Builders</h3>
-      <p className="blog-pages-p">Finding the right builder is crucial to the success of your renovation. Start by researching builders in your area and asking for recommendations from friends and family who have recently completed a renovation. Look for builders who have experience with similar projects and have a proven track record of delivering high-quality work. You can also check online reviews and ratings to get a better idea of their reputation.</p>
+      <h3 className="blog-pages-h3">Step 3: Labor costs</h3>
+      <p className="blog-pages-p">The cost of labor can vary depending on the complexity of the project and the experience of the contractor.</p>
 
-      <h3 className="blog-pages-h3">Step 4: Interview Potential Builders</h3>
-      <p className="blog-pages-p">Once you have a shortlist of potential builders, it's time to interview them. This is an opportunity to ask questions and get to know the builder's experience, qualifications, and communication skills. Ask for references and examples of their previous work, and make sure they are licensed, insured, and bonded.</p>
+      <h3 className="blog-pages-h3">Step 4: Permits</h3>
+      <p className="blog-pages-p">Depending on the type of renovation you're planning, you may need permits. The cost of permits can vary depending on the location and the type of renovation.
+        </p>
+      <h3 className="blog-pages-h3">Step 5: Unexpected expenses</h3>
+      <p className="blog-pages-p">Renovations often come with unexpected expenses, such as structural problems or additional work that needs to be done.</p>
 
-      <h3 className="blog-pages-h3">Step 5: Get Detailed Quotes</h3>
-      <p className="blog-pages-p">Before hiring a builder, it's essential to get detailed quotes. This will help you compare the cost of materials, labor, and any additional expenses. Make sure the quote includes a breakdown of all costs and a timeline for completion. It's also essential to read the fine print and ask questions if anything is unclear.</p>
+      <h3 className="blog-pages-h3">How much does a renovation cost?</h3>
+      <p className="blog-pages-p">Now that we've discussed the factors that affect the cost of a renovation, let's take a look at how much you can expect to spend on different types of renovations.</p>
+      
+      <h3 className="blog-pages-h3">Minor Renovations - $1,000 to $10,000</h3>
+      <p className="blog-pages-p">Minor renovations typically include small updates to a room, such as painting, new fixtures, or updated flooring. The cost of these types of renovations can range from $1,000 to $10,000.</p>
 
-      <h3 className="blog-pages-h3">Step 6: Sign a Contract</h3>
-      <p className="blog-pages-p">Once you have selected a builder and agreed on the terms of the renovation, it's time to sign a contract. Make sure the contract includes all the details of the renovation, such as the scope of work, payment terms, and a timeline for completion. It's essential to read the contract carefully and ask questions if anything is unclear.</p>
+       <h3 className="blog-pages-h3">Mid-Range Renovations - $10,000 to $50,000</h3>
+      <p className="blog-pages-p">Mid-range renovations typically include more extensive updates to a room or multiple rooms, such as a kitchen or bathroom remodel. The cost of these types of renovations can range from $10,000 to $50,000.</p>
 
-      <p className="blog-pages-p">In conclusion, planning your renovation and finding the right builder requires careful research, budgeting, and communication. By following these steps, you can ensure your renovation is completed successfully and within budget. Remember to always ask questions, get detailed quotes, and sign a contract before starting any work. Good luck with your renovation!</p>
+       <h3 className="blog-pages-h3">Major Renovations - $50,000 to $100,000+</h3>
+      <p className="blog-pages-p">Major renovations typically involve significant changes to the layout of your home, such as adding an extension or converting a basement into living space. The cost of these types of renovations can range from $50,000 to $100,000 or more.</p>
+
+      <p className="blog-pages-p">It's important to note that these estimates are just a rough guide, and the actual cost of your renovation will depend on the factors mentioned earlier. It's always a good idea to get detailed quotes from multiple contractors to compare costs and ensure you're getting a fair price.</p>
+      <div className="blog-tips">
+      <h3 className="blog-pages-h3">Tips for keeping renovation costs under control</h3>
+      <p className="blog-pages-p">While renovating your home can be expensive, there are ways to keep costs under control. Here are some tips:</p>
+      <ul>
+      <li>Set a budget and stick to it.</li>
+      <li>Prioritize your renovation goals and focus on the most important updates first.</li>
+      <li>Choose materials wisely and opt for high-quality, durable materials that will last longer.</li>
+      <li>Get multiple quotes from different contractors to compare prices.</li>
+      <li>Plan for unexpected expenses by setting aside a contingency budget.</li>
+      </ul>
+      </div>
+      <p className="blog-pages-p">In conclusion, renovating your home can be a significant investment, but it can also add value to your home and improve your quality of life. By understanding the factors that affect the cost of a renovation and following these tips, you can keep costs under control and ensure your renovation is completed successfully.</p>
     </div>
-   </div>
+   </div> 
   )
 }
 
