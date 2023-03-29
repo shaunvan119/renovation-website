@@ -7,12 +7,6 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { ImPinterest2 } from 'react-icons/im';
 
 
-
-
-
-
-
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

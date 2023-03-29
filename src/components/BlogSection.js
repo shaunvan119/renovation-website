@@ -3,6 +3,7 @@ import './BlogSection.css';
 import blogImage from "../assets/grid2.png"
 import blogImage2 from "../assets/grid3.png"
 import blogImage3 from "../assets/grid12.png"
+import { Link } from 'react-router-dom';
 
 const BlogSection = () => {
 
@@ -32,6 +33,7 @@ useEffect(() => {
   return (
     <div className="main-blog-wrapper">
     <div className="blog-section-container">
+    <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/BlogReno">
       <div className="blog-container">
       <img className="blog-image" src={blogImage} alt="logo"/>
       <div className="blog-p">
@@ -41,6 +43,8 @@ useEffect(() => {
         </p>
       </div>  
       </div>
+      </Link>
+      <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/BlogCost">
       <div className="blog-container">
       <img className="blog-image" src={blogImage2} alt="logo"/>
       <div className="blog-p">
@@ -50,6 +54,8 @@ useEffect(() => {
         </p>
         </div>
       </div>
+      </Link>
+      <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/BlogTrust">
       <div className="blog-container">
       <img className="blog-image" src={blogImage3} alt="logo"/>
       <div className="blog-p">
@@ -59,7 +65,7 @@ useEffect(() => {
         </p>
       </div>  
       </div>
-     
+     </Link>
     </div>
   </div>  
   );
