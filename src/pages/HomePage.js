@@ -28,6 +28,7 @@ import ContactForm from '../components/ContactForm';
 
 
 
+
 const HomePage = () => {
   const servicesGridRef = useRef(null);
   const projectsMove = useRef(null);
