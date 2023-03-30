@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 import Header from '../components/Header'
 import ImageSlides from '../components/ImageSlides'
 import Reviews from '../components/Reviews';
@@ -189,6 +190,10 @@ const [showPopup, setShowPopup] = useState(false);
     <div className="blog-home-section">
     <BlogSection/>
     </div>
+    <MessengerCustomerChat
+          pageId="101012049628035"
+          appId="524942295889420"
+            />
     <Footer/>
     </div>
   )
