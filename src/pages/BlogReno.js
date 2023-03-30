@@ -12,7 +12,6 @@ function BlogReno() {
     <div className="blog-main-wrapper">
     <Header/>
     <div className="blog-container-pages">
-    
     <div className="heading-content">
   <div className="heading-overlay">
     <h1 className="heading">Melbourne home <br />renovation <span className="color__change"><br/>experts.</span><br/><AiOutlineMinus /></h1>
