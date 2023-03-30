@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import './ImageSlides.css';
 import Image1 from '../assets/image1.png';
 import Image2 from '../assets/image2.png';
@@ -35,8 +36,12 @@ const ImageSlides = () => {
     setIsLoaded(true);
   };
 
+  
+
   return (
     <div className={`slides-container ${isLoaded ? 'loaded' : ''}`}>
+    
+
       <div className="image-slides">
         <div className="image-slides-wrapper" style={{ width: `${100 * images.length}%`, transform: `translateX(-${activeIndex * (100 / images.length)}%)` }}>
           {images.map((image, index) => (

@@ -1,5 +1,12 @@
 
 
+.close-button {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: whitesmoke;
+}
+
 .image-overlay-top {
   position: absolute;
   bottom: 0;
@@ -19,6 +26,8 @@
   justify-content: center;
   margin-left: 20px;
 }
+
+
 
 .heading-container {
   position: absolute;
@@ -45,7 +54,8 @@
 .heading-overlay {
   position: relative; /* add this */
   width: 400px;
-  height: 100%; 
+  height: 100%;
+ 
 }
 
 .heading-overlay::before {

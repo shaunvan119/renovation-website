@@ -71,7 +71,33 @@ useEffect(() => {
   };
 }, []);
 
-  
+const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowPopup(true);
+    }, 5000);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
+
+  const popupStyle = {
+    position: 'fixed',
+    top: '60%',
+    left: '50%',
+    transform: showPopup ? 'translate(-50%, -50%)' : 'translate(-50%, -150%)',
+    width: '400px',
+    height: '',
+    backgroundColor: 'black',
+    display: showPopup ? 'block' : 'none',
+    zIndex: 999,
+  };
+
+  const handleClose = () => {
+    setShowPopup(false);
+  };
 
   
 
@@ -79,6 +105,14 @@ useEffect(() => {
     <div className='home__page'>
     <Header/>
     <ImageSlides/>
+    <div className="popup" style={popupStyle}>
+
+        <button className="close-button" onClick={handleClose}>
+            X
+          </button>
+          <ContactForm/>
+        </div>
+
     <div className="services-container">
       <div className="services-grid" ref={servicesGridRef}>
         <div className="service">
@@ -125,7 +159,6 @@ useEffect(() => {
     </div>
     <div className="reviews__container">
     <Reviews/>
-    <ContactForm/>
     </div>
      {/* Scrolling div*/}
     <div className="container__scrolling">
