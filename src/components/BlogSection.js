@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './BlogSection.css';
 import blogImage from "../assets/grid2.png"
 import blogImage2 from "../assets/grid3.png"
@@ -7,27 +7,7 @@ import { Link } from 'react-router-dom';
 
 const BlogSection = () => {
 
-  const handleIntersection = (entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('fade-in');
-      observer.unobserve(entry.target);
-    }
-  });
-};
-
-useEffect(() => {
-    const observer = new IntersectionObserver(handleIntersection, {
-      rootMargin: '0px',
-      threshold: 0.3,
-    });
-    const container = document.querySelector('.blog-section-container');
-    observer.observe(container);
-
-    return () => {
-      observer.unobserve(container);
-    };
-  }, []);
+  
 
   
   return (

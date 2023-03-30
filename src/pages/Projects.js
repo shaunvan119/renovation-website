@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <div className="projects-wrapper-main">
     <Header/>
-    <div className="content-projects">
+    <div className="content-projects projects-circle">
     <ImageGrid/>
     </div>
     <Footer/>

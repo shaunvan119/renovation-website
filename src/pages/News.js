@@ -10,7 +10,6 @@ const News = () => {
     <Header/>
     <div className="content-news">
     <BlogSection/>
-
     </div>
     <Footer/>
    </div>
