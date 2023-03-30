@@ -88,7 +88,8 @@ const [showPopup, setShowPopup] = useState(false);
     top: '60%',
     left: '50%',
     transform: showPopup ? 'translate(-50%, -50%)' : 'translate(-50%, -150%)',
-    width: '400px',
+    maxWidth: '400px',
+    width:'100%',
     height: '',
     backgroundColor: 'black',
     display: showPopup ? 'block' : 'none',
@@ -114,6 +115,7 @@ const [showPopup, setShowPopup] = useState(false);
         </div>
 
     <div className="services-container">
+  
       <div className="services-grid" ref={servicesGridRef}>
         <div className="service">
           <h3 className="service-title"> <MdOutlineBathtub size={30} color='rgb(192, 165, 8)'/> Bathroom Renovations</h3>

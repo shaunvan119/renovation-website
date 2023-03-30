@@ -7,6 +7,7 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { ImPinterest2 } from 'react-icons/im';
 
 
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -18,7 +19,6 @@ const Header = () => {
     <header className="header">
       <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/"><img className="logo" src={logo} alt="logo"/></Link>
       <div className="icons-container">
-      
       <FaFacebookF />
       <AiOutlineInstagram />
       <ImPinterest2 />

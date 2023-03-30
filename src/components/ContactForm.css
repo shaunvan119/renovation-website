@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     max-width: 400px;
+    width: 100%;
     background-color: black;
     align-items: center;
     padding-top: 40px;
@@ -84,4 +85,20 @@ label {
 .result-msg {
     color: red;
     margin-top: -15px;
+}
+
+@media only screen and (max-width: 405px) {
+  .popform__heading {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+
+
+
+
+
 }

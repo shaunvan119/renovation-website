@@ -14,7 +14,6 @@ import Image10 from '../assets/image10.png';
 import Image11 from '../assets/image11.png';
 import Image12 from '../assets/image12.png';
 import { AiOutlineMinus } from 'react-icons/ai';
-import JumpingButton from './JumpingButton'; 
 import { BsUnlockFill } from 'react-icons/bs';
 
 
@@ -57,9 +56,7 @@ const ImageSlides = () => {
   <div className="heading-content">
   <div className="heading-overlay">
     <h1 className="heading">Melbourne home <br />renovation <span className="color__change"><br/>experts.</span><br/><AiOutlineMinus /></h1>
-    <div className="jump-container">
-      <JumpingButton/>
-    </div>
+    
   </div>  
     
   </div>
@@ -68,6 +65,7 @@ const ImageSlides = () => {
       <div className="circle-textmid">UNLOCK YOUR<br/> HOMES VALUE<br/><BsUnlockFill size={30}/></div>
     </div>
   </div>
+
 </div>
       
     </div>
