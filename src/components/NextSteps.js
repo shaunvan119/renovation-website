@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './NextSteps.css';
-import NextSix from "../assets/next6.png";
+import NextSix from "../assets/image1.jpeg";
 import Count from "./Count"
 import CountYears from './CountYears';
 

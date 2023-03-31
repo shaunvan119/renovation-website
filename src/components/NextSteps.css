@@ -43,9 +43,8 @@
 }
 
 .step-image {
-  width: 750px;
   width: 100%;
-  height: 661px;
+  max-height: 800px;
   z-index: 0; 
 
  
