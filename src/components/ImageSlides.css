@@ -257,6 +257,25 @@
   
 }
 
+@media (min-width: 1600px) {
+  .slides-container {
+  height: 700px;
+}
+
+
+  
+}
+
+@media (min-width: 1700px) {
+  .slides-container {
+  height: 800px;
+}
+
+
+  
+}
+
+
 
 
 
