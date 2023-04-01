@@ -19,9 +19,9 @@ const Header = () => {
     <header className="header">
       <Link style={{textDecoration: 'none', color: 'inherit', }}  to="/"><img className="logo" src={logo} alt="logo"/></Link>
       <div className="icons-container">
-      <FaFacebookF />
-      <AiOutlineInstagram />
-      <ImPinterest2 />
+      <a style={{textDecoration: 'none', color: 'inherit', }}  href="https://www.facebook.com/profile.php?id=100091332464688"><FaFacebookF /></a>
+      <a style={{textDecoration: 'none', color: 'inherit', }}  href="https://www.instagram.com/"><AiOutlineInstagram /></a>
+      <a style={{textDecoration: 'none', color: 'inherit', }}  href="https://www.pinterest.com.au/"><ImPinterest2 /></a>
       </div>
       <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
         <ul>

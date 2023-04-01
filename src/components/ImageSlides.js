@@ -6,6 +6,8 @@ import Image2 from '../assets/image2.jpeg';
 import Image3 from '../assets/image3.jpeg';
 import Image4 from '../assets/image4.jpeg';
 
+
+
 import { AiOutlineMinus } from 'react-icons/ai';
 import { BsUnlockFill } from 'react-icons/bs';
 
