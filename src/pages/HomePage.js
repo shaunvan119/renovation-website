@@ -192,7 +192,7 @@ const [showPopup, setShowPopup] = useState(false);
     <BlogSection/>
     </div>
     <MessengerCustomerChat
-          pageId="101012049628035"
+          pageId="262911314233913"
           appId="524942295889420"
             />
     <Footer/>
